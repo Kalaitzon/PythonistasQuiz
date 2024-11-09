@@ -43,6 +43,10 @@
         var fullscreenButton = document.querySelector("#unity-fullscreen-button");
         var warningBanner = document.querySelector("#unity-warning");
 
+        <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-firestore.js"></script>
+
         function unityShowBanner(msg, type) {
             function updateBannerVisibility() {
                 warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
