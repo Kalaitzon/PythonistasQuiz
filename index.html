@@ -6,6 +6,19 @@
     <title>Unity WebGL Player | Quiz</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+        #unity-fullscreen-button {
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            background-image: url('TemplateData/fullscreen.png'); /* Εικόνα για το κουμπί πλήρους οθόνης */
+            background-size: cover;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            z-index: 10;
+        }
+    </style>
 </head>
 <body>
     <div id="unity-container" class="unity-desktop">
@@ -19,8 +32,7 @@
         <div id="unity-warning"></div>
         <div id="unity-footer">
             <div id="unity-webgl-logo"></div>
-            <div id="unity-fullscreen-button"></div>
-            <div id="unity-build-title">Quiz</div>
+            <div id="unity-fullscreen-button"></div> <!-- Κουμπί πλήρους οθόνης -->
         </div>
     </div>
     <script>
@@ -84,7 +96,7 @@
             }).then((unityInstance) => {
                 loadingBar.style.display = "none";
                 fullscreenButton.onclick = () => {
-                    unityInstance.SetFullscreen(1);
+                    unityInstance.SetFullscreen(1); // Ενεργοποιεί το fullscreen mode
                 };
             }).catch((message) => {
                 alert(message);
