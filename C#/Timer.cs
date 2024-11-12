@@ -7,7 +7,7 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     [SerializeField] float timeToCompleteQuestion = 15f;                        // Χρόνος για την απάντηση στην ερώτηση
-    [SerializeField] float timeToShowcorrectAnswer = 0.3f;                      // Χρόνος για την εμφάνιση της σωστής απάντησης/επιβράβευσης
+    [SerializeField] float timeToShowcorrectAnswer = 5f;                      // Χρόνος για την εμφάνιση της σωστής απάντησης/επιβράβευσης
 
     public bool loadNextQuestion;                                               // Έλεγχος για τη φόρτωση της επόμενης ερώτησης
     public float fillFraction;                                                  // Κλάσμα που χρησιμοποιείται για την ενδεικτική γραμμή χρονοδιαγράμματος
